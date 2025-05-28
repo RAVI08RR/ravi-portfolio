@@ -1,0 +1,6 @@
+src/app/page.tsx
+src/app/projects/page.tsx
+src/components/ContactSection.tsx
+src/components/ExperienceTimeline.tsx
+src/components/ProjectCard.tsx
+src/lib/sanity.ts
