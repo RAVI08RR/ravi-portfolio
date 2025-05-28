@@ -6,7 +6,7 @@ import ExperienceTimeline from "@/components/ExperienceTimeline";
 import SkillsSection from "@/components/SkillsSection";
 import EducationSection from "@/components/EducationSection";
 import ContactSection from "@/components/ContactSection";
-import { getHeroData, getAboutData, getExperienceData, urlFor } from "@/lib/sanity";
+import { getHeroData, getAboutData, getExperienceData } from "@/lib/sanity";
 import { defaultHeroData } from "@/schemas/hero";
 import { defaultAboutData } from "@/schemas/about";
 import { defaultExperienceData } from "@/schemas/experience";
@@ -32,7 +32,7 @@ export default async function Home() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="md:w-1/2">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-                Hi, I'm <span className="text-blue-600">{heroData.name}</span>
+                Hi, I&apos;m <span className="text-blue-600">{heroData.name}</span>
               </h1>
               <h2 className="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mb-6">
                 {heroData.title}

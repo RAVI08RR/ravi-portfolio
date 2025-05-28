@@ -3,8 +3,15 @@
 import { motion } from 'framer-motion';
 import { defaultExperienceData } from '@/schemas/experience';
 
+interface Experience {
+  company: string;
+  position: string;
+  duration: string;
+  description: string[];
+}
+
 interface ExperienceTimelineProps {
-  experiences?: any[];
+  experiences?: Experience[];
 }
 
 const ExperienceTimeline = ({ experiences }: ExperienceTimelineProps) => {

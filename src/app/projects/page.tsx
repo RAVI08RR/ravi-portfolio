@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import ProjectCard from "@/components/ProjectCard";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import { getProjects } from "@/lib/sanity";
 
 // Metadata is moved to a separate layout.tsx file since this is a client component
@@ -175,14 +176,14 @@ export default function Projects() {
             >
               <h2 className="text-3xl font-bold mb-6">Interested in working together?</h2>
               <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
-                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+                I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
-              <a 
+              <Link 
                 href="/#contact" 
                 className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
               >
                 Get In Touch
-              </a>
+              </Link>
             </motion.div>
           </div>
         </section>
