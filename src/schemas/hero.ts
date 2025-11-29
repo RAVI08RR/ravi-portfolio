@@ -22,5 +22,5 @@ export const defaultHeroData: HeroData = {
   email: "ravi.belpade@example.com",
   phone: "+919876543210",
   linkedIn: "https://www.linkedin.com/in/ravi-belpade-690966218/",
-  profileImage: "/profile-placeholder.jpg",
+  profileImage: "https://cdn.sanity.io/images/vr05dnd0/production/55a818227061b003c4351bc6fa8fe2c200432753-2268x4032.jpg",
 };

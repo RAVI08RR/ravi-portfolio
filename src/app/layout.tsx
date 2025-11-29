@@ -32,7 +32,12 @@ export default function RootLayout({
         suppressHydrationWarning
       >
         <StyledComponentsRegistry>
-          <ThemeProvider attribute="class" defaultTheme="system">
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
             {children}
           </ThemeProvider>
         </StyledComponentsRegistry>

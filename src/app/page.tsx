@@ -14,7 +14,8 @@ export const revalidate = 3600; // Revalidate the data at most every hour
 
 export default async function Home() {
   // Fetch data from Sanity
-  const heroData = await getHeroData().catch(() => null) || defaultHeroData;
+  // Use hardcoded data directly
+  const heroData = defaultHeroData;
   const aboutData = await getAboutData().catch(() => null) || defaultAboutData;
   const experienceData = await getExperienceData().catch(() => null) || defaultExperienceData;
   
