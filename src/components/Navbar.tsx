@@ -27,11 +27,11 @@ const Navbar = () => {
             <Link href="/blog" className="hover:text-blue-600 transition-colors">
               Blog
             </Link>
+            <Link href="/skills" className="hover:text-blue-600 transition-colors">
+              Skills
+            </Link>
             <Link href="/#experience" className="hover:text-blue-600 transition-colors">
               Experience
-            </Link>
-            <Link href="/#skills" className="hover:text-blue-600 transition-colors">
-              Skills
             </Link>
             <Link href="/#education" className="hover:text-blue-600 transition-colors">
               Education
@@ -98,18 +98,18 @@ const Navbar = () => {
               Blog
             </Link>
             <Link 
+              href="/skills" 
+              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              onClick={() => setIsOpen(false)}
+            >
+              Skills
+            </Link>
+            <Link 
               href="/#experience" 
               className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
               onClick={() => setIsOpen(false)}
             >
               Experience
-            </Link>
-            <Link 
-              href="/#skills" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
-              onClick={() => setIsOpen(false)}
-            >
-              Skills
             </Link>
             <Link 
               href="/#education" 
