@@ -82,7 +82,7 @@ export default function HeroSection({ heroData, profileImageUrl }: HeroSectionPr
               </motion.a>
               
               <motion.a 
-                href={`tel:${heroData.phone}`}
+                href={`tel: +919131352945`}
                 className="flex items-center gap-2 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 text-gray-800 dark:text-gray-200 px-6 py-3 rounded-lg transition-all border-2 border-gray-200 dark:border-gray-700 shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
@@ -90,7 +90,7 @@ export default function HeroSection({ heroData, profileImageUrl }: HeroSectionPr
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                {heroData.phone}
+             9131352945
               </motion.a>
               
               <motion.a 

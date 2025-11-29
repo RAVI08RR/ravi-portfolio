@@ -141,7 +141,7 @@ export default function SkillsPage() {
   }, {} as Record<string, Skill[]>);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+    <div className="min-h-screen bg-gray-50 dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors duration-300">
       <Navbar />
       
       {/* Hero Section */}
@@ -191,7 +191,7 @@ export default function SkillsPage() {
               Skills & Expertise
             </motion.h1>
             <motion.p 
-              className="text-xl md:text-2xl text-gray-300 mb-8"
+              className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.4 }}
@@ -213,7 +213,7 @@ export default function SkillsPage() {
                   className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
                     activeCategory === category
                       ? 'bg-gradient-to-r from-blue-500 to-purple-500 text-white shadow-lg shadow-blue-500/50'
-                      : 'bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 border border-gray-700'
+                      : 'bg-white dark:bg-gray-800/50 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700/50 border border-gray-200 dark:border-gray-700'
                   }`}
                 >
                   {category.charAt(0).toUpperCase() + category.slice(1)}
@@ -248,7 +248,7 @@ export default function SkillsPage() {
                       viewport={{ once: true, margin: "-100px" }}
                       transition={{ duration: 0.6, delay: categoryIndex * 0.1 }}
                     >
-                      <h2 className="text-3xl font-bold mb-8 text-white capitalize">
+                      <h2 className="text-3xl font-bold mb-8 text-gray-900 dark:text-white capitalize">
                         {category}
                       </h2>
                       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -299,7 +299,7 @@ export default function SkillsPage() {
                 >
                   {stat.value}
                 </motion.div>
-                <div className="text-gray-400 text-sm md:text-base">{stat.label}</div>
+                <div className="text-gray-600 dark:text-gray-400 text-sm md:text-base">{stat.label}</div>
               </motion.div>
             ))}
           </div>
@@ -354,7 +354,7 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
       onHoverEnd={() => setIsHovered(false)}
       className="relative group"
     >
-      <div className="relative bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 overflow-hidden">
+      <div className="relative bg-white dark:bg-gradient-to-br dark:from-gray-800/50 dark:to-gray-900/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-200 dark:border-gray-700/50 hover:border-blue-500/50 transition-all duration-300 overflow-hidden shadow-lg dark:shadow-none">
         {/* Animated gradient background on hover */}
         <motion.div
           className="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-purple-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
@@ -375,22 +375,22 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
           </motion.div>
 
           {/* Skill Name */}
-          <h3 className="text-xl font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+          <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
             {skill.name}
           </h3>
 
           {/* Description */}
           {skill.description && (
-            <p className="text-sm text-gray-400 mb-4">{skill.description}</p>
+            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{skill.description}</p>
           )}
 
           {/* Proficiency Bar */}
           <div className="space-y-2">
             <div className="flex justify-between text-sm">
-              <span className="text-gray-400">Proficiency</span>
+              <span className="text-gray-600 dark:text-gray-400">Proficiency</span>
               <span className="text-blue-400 font-semibold">{skill.proficiency}%</span>
             </div>
-            <div className="h-2 bg-gray-700/50 rounded-full overflow-hidden">
+            <div className="h-2 bg-gray-200 dark:bg-gray-700/50 rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
                 initial={{ width: 0 }}

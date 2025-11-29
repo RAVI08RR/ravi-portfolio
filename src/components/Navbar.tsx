@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import ThemeToggle from './ThemeToggle';
-
+import Image from 'next/image';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -13,7 +13,9 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-xl font-bold">
-            Ravi Belpade
+
+          <Image src="/logoravi.png" alt="Ravi Portfolio Logo" width={250} height={40} />
+
           </Link>
 
           {/* Desktop Navigation */}

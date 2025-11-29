@@ -46,7 +46,7 @@ export default async function Home() {
       </section>
       
       {/* Experience Section */}
-      <section id="experience" className="py-20 bg-gray-50 dark:bg-gray-900">
+      <section id="experience" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
@@ -90,7 +90,7 @@ export default async function Home() {
       </section>
       
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white dark:bg-gray-800">
+      <section id="contact" className="py-20 bg-gradient-to-b from-white to-blue-50 dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
