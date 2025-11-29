@@ -47,7 +47,7 @@ const Footer = () => {
                 <span className="font-medium">Email:</span> ravi.belpade@example.com
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                <span className="font-medium">Phone:</span> +91 9876543210
+                <span className="font-medium">Phone:</span> +91 9131352945
               </li>
               <li className="text-gray-600 dark:text-gray-400">
                 <span className="font-medium">LinkedIn:</span>{' '}
