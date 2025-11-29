@@ -44,10 +44,17 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Contact</h3>
             <ul className="space-y-2">
               <li className="text-gray-600 dark:text-gray-400">
-                <span className="font-medium">Email:</span> ravi.belpade@example.com
+                <span className="font-medium">Email:</span>
+                <a href="mailto:ravisoni08rrrr@gmail.com" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  ravisoni08rrrr@gmail.com
+                </a>
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                <span className="font-medium">Phone:</span> +91 9131352945
+                <span className="font-medium">Phone:</span>
+                  
+                <a href="tel:+919131352945" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  +91 9131352945
+                </a>
               </li>
               <li className="text-gray-600 dark:text-gray-400">
                 <span className="font-medium">LinkedIn:</span>{' '}
