@@ -60,7 +60,7 @@ export default async function Home() {
       </section>
       
       {/* Skills Section */}
-      <section id="skills" className="py-20 bg-white dark:bg-gray-800">
+      <section id="skills" className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <h2 className="text-3xl font-bold mb-4">Skills & Expertise</h2>

@@ -365,11 +365,11 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
         <div className="relative z-10">
           {/* Icon */}
           <motion.div
-            className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center text-4xl"
+            className="w-16 h-16 mb-4 rounded-xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 dark:bg-gray-600 flex items-center justify-center text-4xl"
             whileHover={{ rotate: [0, -10, 10, -10, 0] }}
             transition={{ duration: 0.5 }}
           >
-            <span className="text-blue-400 group-hover:text-blue-300 transition-colors">
+            <span className="text-blue-400 group-hover:text-blue-300 dark:text-white transition-colors">
               {iconMap[skill.icon as keyof typeof iconMap] || skill.icon.charAt(0)}
             </span>
           </motion.div>
@@ -381,16 +381,16 @@ function SkillCard({ skill, index }: { skill: Skill; index: number }) {
 
           {/* Description */}
           {skill.description && (
-            <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">{skill.description}</p>
+            <p className="text-sm text-gray-600 dark:text-white mb-4">{skill.description}</p>
           )}
 
           {/* Proficiency Bar */}
           <div className="space-y-2">
             <div className="flex justify-between text-sm">
-              <span className="text-gray-600 dark:text-gray-400">Proficiency</span>
+              <span className="text-gray-600 dark:text-white">Proficiency</span>
               <span className="text-blue-400 font-semibold">{skill.proficiency}%</span>
             </div>
-            <div className="h-2 bg-gray-200 dark:bg-gray-700/50 rounded-full overflow-hidden">
+            <div className="h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
               <motion.div
                 className="h-full bg-gradient-to-r from-blue-500 to-purple-500 rounded-full"
                 initial={{ width: 0 }}

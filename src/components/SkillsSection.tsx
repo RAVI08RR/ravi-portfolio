@@ -156,29 +156,39 @@ const SkillsSection = () => {
       {skillCategories.map((category, index) => (
         <motion.div 
           key={index}
-          className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-200 dark:border-gray-700"
+          className="bg-white/50 dark:bg-gray-800/50 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/20 dark:border-gray-700/30 overflow-hidden relative group"
           variants={itemVariants}
+          whileHover={{ y: -5, transition: { duration: 0.2 } }}
         >
-          <h3 className="text-xl font-bold mb-4">{category.name}</h3>
-          <div className="flex flex-wrap gap-3">
+          {/* Gradient glow effect on hover */}
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <h3 className="text-xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700 dark:from-white dark:to-gray-300 relative z-10">
+            {category.name}
+          </h3>
+          
+          <div className="flex flex-wrap gap-4 relative z-10">
             {category.skills.map((skill) => (
               <motion.div 
                 key={skill._id}
-                className="flex flex-col items-center"
-                whileHover={{ scale: 1.05 }}
+                className="flex flex-col items-center w-[calc(33.333%-11px)]"
+                whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <div className="flex items-center justify-center w-12 h-12 bg-gray-100 dark:bg-gray-700 rounded-full mb-2 text-xl text-blue-600 dark:text-blue-400">
+                <div className="flex items-center justify-center w-14 h-14 bg-white dark:bg-gray-600 rounded-xl mb-2 text-2xl text-blue-600 dark:text-white shadow-sm group-hover/skill:shadow-md transition-all duration-300 border border-gray-100 dark:border-gray-500">
                   {iconMap[skill.icon as keyof typeof iconMap] || skill.icon.charAt(0)}
                 </div>
-                <span className="text-sm text-center">{skill.name}</span>
+                <span className="text-sm font-semibold text-center text-gray-700 dark:text-white">{skill.name}</span>
                 
                 {/* Skill proficiency bar */}
-                <div className="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-1.5 mt-1">
-                  <div 
-                    className="bg-blue-600 h-1.5 rounded-full" 
-                    style={{ width: `${skill.proficiency}%` }}
-                  ></div>
+                <div className="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-1 mt-2 overflow-hidden">
+                  <motion.div 
+                    className="bg-gradient-to-r from-blue-500 to-purple-500 h-1 rounded-full" 
+                    initial={{ width: 0 }}
+                    whileInView={{ width: `${skill.proficiency}%` }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                  ></motion.div>
                 </div>
               </motion.div>
             ))}

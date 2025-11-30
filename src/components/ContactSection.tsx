@@ -92,7 +92,7 @@ const ContactSection = () => {
               <div className="ml-5">
                 <h4 className="text-sm font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-1">Linkedin</h4>
                 <a 
-                  href="https://linkedin.com/in/ravi-belpade" 
+                  href="https://www.linkedin.com/in/ravi-belpade-690966218/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-lg font-medium text-gray-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
