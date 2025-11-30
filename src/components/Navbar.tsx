@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-xl font-bold">
 
-          <Image src="/logoravi.png" alt="Ravi Portfolio Logo" width={250} height={40} />
+          <Image src="/logoravi.png" className='!md:w-[0px] lg:w-[250px] h-full ' alt="Ravi Portfolio Logo" width={200} height={40} />
 
           </Link>
 

@@ -70,7 +70,7 @@ export default function HeroSection({ heroData, profileImageUrl }: HeroSectionPr
               transition={{ delay: 0.8, duration: 0.6 }}
             >
               <motion.a 
-                href={`mailto:${heroData.email}`}
+                href={`mailto:ravisoni08rrrr@gmail.com`}
                 className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-6 py-3 rounded-lg transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
