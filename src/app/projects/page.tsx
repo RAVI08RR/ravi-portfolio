@@ -110,9 +110,16 @@ export default function Projects() {
   return (
     <>
       <Navbar />
-      <div className="pt-16 min-h-screen"> {/* Add padding to account for fixed navbar */}
+      <div className="pt-16 min-h-screen bg-gray-50 dark:bg-black transition-colors duration-300">
+        {/* Background Pattern */}
+        <div className="fixed inset-0 z-0 pointer-events-none">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"></div>
+          <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-blue-500 opacity-20 blur-[100px]"></div>
+          <div className="absolute right-0 bottom-0 -z-10 h-[310px] w-[310px] rounded-full bg-purple-500 opacity-20 blur-[100px]"></div>
+        </div>
+
         {/* Projects Header */}
-        <section className="bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 py-16 md:py-24">
+        <section className="relative z-10 py-16 md:py-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -120,18 +127,24 @@ export default function Projects() {
               transition={{ duration: 0.5 }}
               className="text-center max-w-3xl mx-auto"
             >
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">My Projects</h1>
-              <p className="text-lg text-gray-600 dark:text-gray-400">
+              <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400">
+                My Projects
+              </h1>
+              <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
                 A showcase of my recent web development work, featuring projects built with React, Next.js, and other modern technologies.
               </p>
               <div className="mt-4">
                 <a 
                   href="/studio" 
-                  className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline text-sm"
+                  className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20 hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Admin: Manage Projects
+                  <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  Manage Projects
                 </a>
               </div>
             </motion.div>
@@ -139,7 +152,7 @@ export default function Projects() {
         </section>
         
         {/* Projects Grid */}
-        <section className="py-16 bg-white dark:bg-gray-800">
+        <section className="relative z-10 pb-24">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             {loading ? (
               <div className="flex justify-center items-center h-64">
@@ -165,7 +178,7 @@ export default function Projects() {
         </section>
         
         {/* Call to Action */}
-        <section className="py-16 bg-gray-50 dark:bg-gray-900">
+        <section className="relative z-10 py-16 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm border-t border-gray-200 dark:border-gray-800">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -174,13 +187,13 @@ export default function Projects() {
               transition={{ duration: 0.5 }}
               className="text-center max-w-3xl mx-auto"
             >
-              <h2 className="text-3xl font-bold mb-6">Interested in working together?</h2>
-              <p className="text-lg text-gray-600 dark:text-gray-400 mb-8">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">Interested in working together?</h2>
+              <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
                 I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
               </p>
               <Link 
                 href="/#contact" 
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
+                className="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-medium py-3 px-8 rounded-full transition-all shadow-lg hover:shadow-xl hover:-translate-y-1"
               >
                 Get In Touch
               </Link>
