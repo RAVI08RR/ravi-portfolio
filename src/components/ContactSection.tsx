@@ -104,7 +104,7 @@ const ContactSection = () => {
           </div>
           
           <div className="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
-            <h4 className="text-lg font-semibold mb-4">Download Resume</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Download Resume</h4>
             <a 
               href="https://drive.google.com/file/d/1DlyY38pUVvsO8HmKFcj7fjxWFYLAE-gO/view?usp=sharing" 
               target="_blank"
@@ -143,7 +143,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 placeholder="John Doe"
-                className="w-full px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300"
+                className="w-full px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 text-gray-900 dark:text-white"
               />
             </div>
             
@@ -159,7 +159,7 @@ const ContactSection = () => {
                 onChange={handleChange}
                 required
                 placeholder="john@example.com"
-                className="w-full px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300"
+                className="w-full px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 text-gray-900 dark:text-white"
               />
             </div>
             
@@ -175,7 +175,7 @@ const ContactSection = () => {
                 required
                 rows={5}
                 placeholder="How can I help you?"
-                className="w-full px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 resize-none"
+                className="w-full px-5 py-3 bg-gray-50 dark:bg-gray-900/50 border border-gray-200 dark:border-gray-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300 resize-none text-gray-900 dark:text-white"
               ></textarea>
             </div>
             

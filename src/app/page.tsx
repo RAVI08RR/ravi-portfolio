@@ -33,9 +33,9 @@ export default async function Home() {
       <section className="py-20 bg-white dark:bg-gray-800">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div>
-            <h2 className="text-3xl font-bold mb-8 text-center">{aboutData.title || "About Me"}</h2>
+            <h2 className="text-3xl font-bold mb-8 text-center text-gray-900 dark:text-white">{aboutData.title || "About Me"}</h2>
             <div className="max-w-3xl mx-auto text-lg text-gray-600 dark:text-gray-400 space-y-4">
-              {aboutData.paragraphs.map((paragraph, index) => (
+              {aboutData.paragraphs.map((paragraph: string, index: number) => (
                 <p key={index}>
                   {paragraph}
                 </p>
@@ -49,7 +49,7 @@ export default async function Home() {
       <section id="experience" className="py-20 bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Work Experience</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Work Experience</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               My professional journey in web development across different companies.
             </p>
@@ -63,7 +63,7 @@ export default async function Home() {
       <section id="skills" className="py-20 bg-gradient-to-b from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Skills & Expertise</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Skills & Expertise</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Technologies and tools I work with to bring ideas to life.
             </p>
@@ -77,7 +77,7 @@ export default async function Home() {
       <section id="education" className="py-20 bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Education</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Education</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               My academic background and qualifications.
             </p>
@@ -93,7 +93,7 @@ export default async function Home() {
       <section id="contact" className="py-20 bg-gradient-to-b from-white to-blue-50 dark:from-gray-800 dark:to-gray-900 relative overflow-hidden">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
+            <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Contact Me</h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
               Have a project in mind or want to discuss opportunities? Get in touch!
             </p>

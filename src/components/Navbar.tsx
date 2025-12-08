@@ -9,7 +9,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed w-full bg-background/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
+    <header className="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="text-xl font-bold">
@@ -20,25 +20,25 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex space-x-8">
-            <Link href="/" className="hover:text-blue-600 transition-colors">
+            <Link href="/" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Home
             </Link>
-            <Link href="/projects" className="hover:text-blue-600 transition-colors">
+            <Link href="/projects" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Projects
             </Link>
-            <Link href="/blog" className="hover:text-blue-600 transition-colors">
+            <Link href="/blog" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Blog
             </Link>
-            <Link href="/skills" className="hover:text-blue-600 transition-colors">
+            <Link href="/skills" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Skills
             </Link>
-            <Link href="/#experience" className="hover:text-blue-600 transition-colors">
+            <Link href="/#experience" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Experience
             </Link>
-            <Link href="/#education" className="hover:text-blue-600 transition-colors">
+            <Link href="/#education" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Education
             </Link>
-            <Link href="/#contact" className="hover:text-blue-600 transition-colors">
+            <Link href="/#contact" className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 transition-colors font-medium">
               Contact
             </Link>
           </nav>
@@ -48,7 +48,7 @@ const Navbar = () => {
             <ThemeToggle />
             
             <button 
-              className="md:hidden flex items-center"
+              className="md:hidden flex items-center text-gray-700 dark:text-gray-200"
               onClick={() => setIsOpen(!isOpen)}
             >
               <svg 
@@ -75,54 +75,54 @@ const Navbar = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
-          className="md:hidden bg-background border-t border-gray-200 dark:border-gray-800"
+          className="md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-800"
         >
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link 
               href="/" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link 
               href="/projects" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </Link>
             <Link 
               href="/blog" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Blog
             </Link>
             <Link 
               href="/skills" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Skills
             </Link>
             <Link 
               href="/#experience" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Experience
             </Link>
             <Link 
               href="/#education" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Education
             </Link>
             <Link 
               href="/#contact" 
-              className="block px-3 py-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="block px-3 py-2 rounded-md text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 hover:text-blue-600 dark:hover:text-blue-400"
               onClick={() => setIsOpen(false)}
             >
               Contact

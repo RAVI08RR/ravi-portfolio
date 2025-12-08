@@ -36,7 +36,7 @@ const EducationSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
         >
-          <h3 className="text-xl font-bold mb-1">{item.degree}</h3>
+          <h3 className="text-xl font-bold mb-1 text-gray-900 dark:text-white">{item.degree}</h3>
           <h4 className="text-lg text-gray-600 dark:text-gray-400 mb-2">{item.institution}</h4>
           <p className="text-sm text-gray-500 dark:text-gray-500 mb-2">{item.duration}</p>
           {item.description && (
