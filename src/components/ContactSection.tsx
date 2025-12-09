@@ -106,7 +106,7 @@ const ContactSection = () => {
           <div className="mt-10 pt-8 border-t border-gray-200 dark:border-gray-700">
             <h4 className="text-lg font-semibold mb-4 text-gray-900 dark:text-white">Download Resume</h4>
             <a 
-              href="https://drive.google.com/file/d/1DlyY38pUVvsO8HmKFcj7fjxWFYLAE-gO/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1btycbtVWiRV9kTjCcsVdMZmneECCA2Zt/view?usp=sharing" 
               target="_blank"
               className="group inline-flex items-center justify-center w-full sm:w-auto bg-gray-900 dark:bg-white text-white dark:text-gray-900 font-bold py-3 px-8 rounded-xl hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
